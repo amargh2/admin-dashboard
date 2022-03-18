@@ -6,7 +6,7 @@
         "sidebar content content content announcements"
         "sidebar content content content trending"
         "sidebar content content content trending";
-    gap: 5px;
+    gap: 15px;
     grid-template-rows: 100px;
     background-color: lightgrey;
     
@@ -56,13 +56,13 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     background-color:lightgrey;
 }
 
 .card {
     background-color: white;
-    padding: 150px;
+    padding: 20%;
 }
 
 .announcements {
@@ -82,6 +82,10 @@
     justify-content: center;
     background-color: white;
     padding: 25px;
+}
+
+input {
+    border-radius: 20px;
 }
 
 .button {
