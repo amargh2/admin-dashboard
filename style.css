@@ -1,0 +1,95 @@
+.container {
+    display:grid;
+    grid-template-areas:
+        "sidebar header header header header"
+        "sidebar content content content announcements"
+        "sidebar content content content announcements"
+        "sidebar content content content trending"
+        "sidebar content content content trending";
+    gap: 5px;
+    grid-template-rows: 100px;
+    background-color: lightgrey;
+    
+        
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color:skyblue;
+    font-size: larger;
+    font-weight: bolder;
+    color:antiquewhite;
+    height: 100vh;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+}
+
+.header {
+    grid-template-areas: 
+    "search search search profile" 
+    "greeting greeting greeting buttons";
+    grid-area: header;
+    background-color: whitesmoke;
+    display: grid;
+    justify-content:space-around;
+    font-weight:bolder;
+    font-size: larger;
+    justify-content:space-between;
+}
+
+.search {
+    grid-area: search;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.buttons{
+    grid-area: buttons;
+}
+
+.content {
+    grid-area: content;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    background-color:lightgrey;
+}
+
+.card {
+    background-color: white;
+    padding: 150px;
+}
+
+.announcements {
+    grid-area: announcements;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: white;
+    gap:15px;
+}
+
+.trending {
+    grid-area: trending;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 25px;
+}
+
+.button {
+    background-color:skyblue;
+    border-radius:25px;
+    height: 32px;
+    width: 128px;
+    font-weight: bolder;
+    font-size: larger;
+    color:antiquewhite;
+}
